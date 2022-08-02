@@ -27,11 +27,15 @@ public class Preference {
     }
 
     public static void 주문내역수집(OrderPlaced orderPlaced) {
-        /** Example 1:  new item 
+        /** Example 1:  new item  */
         Preference preference = new Preference();
+        preference.setStrategy("tset");
+
+        //....
+
         repository().save(preference);
 
-        */
+       
 
         /** Example 2:  finding and process
         
